@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/guestbook.iml" filepath="$PROJECT_DIR$/.idea/guestbook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../startbootstrap-resume-gh-pages/.idea/startbootstrap-resume-gh-pages.iml" filepath="$PROJECT_DIR$/../../../../startbootstrap-resume-gh-pages/.idea/startbootstrap-resume-gh-pages.iml" />
     </modules>
   </component>
 </project>
