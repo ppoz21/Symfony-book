@@ -118,6 +118,9 @@
             "config/routes/easy_admin.yaml"
         ]
     },
+    "egulias/email-validator": {
+        "version": "2.1.18"
+    },
     "laminas/laminas-code": {
         "version": "3.4.1"
     },
@@ -126,6 +129,9 @@
     },
     "laminas/laminas-zendframework-bridge": {
         "version": "1.0.4"
+    },
+    "lorenzo/pinky": {
+        "version": "1.0.5"
     },
     "monolog/monolog": {
         "version": "2.1.0"
@@ -147,6 +153,15 @@
     },
     "php-webdriver/webdriver": {
         "version": "1.8.2"
+    },
+    "phpdocumentor/reflection-common": {
+        "version": "2.1.0"
+    },
+    "phpdocumentor/reflection-docblock": {
+        "version": "5.1.0"
+    },
+    "phpdocumentor/type-resolver": {
+        "version": "1.1.0"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -171,6 +186,9 @@
         "files": [
             "config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "symfony/amqp-pack": {
+        "version": "v1.0.12"
     },
     "symfony/asset": {
         "version": "v5.0.9"
@@ -301,6 +319,18 @@
     "symfony/intl": {
         "version": "v5.0.9"
     },
+    "symfony/mailer": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "15658c2a0176cda2e7dba66276a2030b52bd81b2"
+        },
+        "files": [
+            "config/packages/mailer.yaml"
+        ]
+    },
     "symfony/maker-bundle": {
         "version": "1.0",
         "recipe": {
@@ -397,6 +427,9 @@
     "symfony/property-access": {
         "version": "v5.0.9"
     },
+    "symfony/property-info": {
+        "version": "v5.0.10"
+    },
     "symfony/routing": {
         "version": "4.2",
         "recipe": {
@@ -434,6 +467,12 @@
     },
     "symfony/security-http": {
         "version": "v5.0.9"
+    },
+    "symfony/serializer": {
+        "version": "v5.0.10"
+    },
+    "symfony/serializer-pack": {
+        "version": "v1.0.3"
     },
     "symfony/service-contracts": {
         "version": "v2.1.2"
@@ -531,7 +570,16 @@
     "symfony/yaml": {
         "version": "v5.0.9"
     },
+    "tijsverkoyen/css-to-inline-styles": {
+        "version": "2.2.2"
+    },
+    "twig/cssinliner-extra": {
+        "version": "v3.0.3"
+    },
     "twig/extra-bundle": {
+        "version": "v3.0.3"
+    },
+    "twig/inky-extra": {
         "version": "v3.0.3"
     },
     "twig/intl-extra": {
@@ -542,5 +590,8 @@
     },
     "webimpress/safe-writer": {
         "version": "2.0.1"
+    },
+    "webmozart/assert": {
+        "version": "1.9.0"
     }
 }
