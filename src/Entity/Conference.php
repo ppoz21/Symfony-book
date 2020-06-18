@@ -18,7 +18,7 @@ use Symfony\Component\String\Slugger\SluggerInterface;
  *
  * @ApiResource(
  *
- *     collectionOperations={"get"={"normalization_context"={"groups"="conference_list"}}},
+ *     collectionOperations={"get"={"normalization_context"={"groups"="conference:list"}}},
  *
  *     itemOperations={"get"={"normalization_context"={"groups"="conference:item"}}},
  *     order={"year"="DESC", "city"="ASC"},
@@ -64,6 +64,8 @@ class Conference
 
     /**
      * @ORM\Column(type="string", length=255, unique=true)
+     *
+     * @Groups({"conference:list", "conference:item"})
      */
     private $slug;
 
