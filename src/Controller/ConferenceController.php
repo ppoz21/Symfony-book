@@ -36,7 +36,7 @@ class ConferenceController extends AbstractController
     }
 
     /**
-     * @Route("/conference_header", name="conference_header")
+     * @Route("/{_locale<%app.supported_locales%>}/conference_header", name="conference_header")
      */
     public function conferenceHeader(ConferenceRepository $conferenceRepository)
     {
@@ -46,9 +46,16 @@ class ConferenceController extends AbstractController
         $response->setSharedMaxAge(3600);
         return $response;
     }
+    /**
+     * @Route("/")
+     */
+    public function indexNoLocale()
+    {
+        return $this->redirectToRoute('homepage', ['_locale' => 'en']);
+    }
 
     /**
-     * @Route("/", name="homepage")
+     * @Route("/{_locale<%app.supported_locales%>}/", name="homepage")
      */
     public function index(ConferenceRepository $conferenceRepository)
     {
@@ -59,7 +66,7 @@ class ConferenceController extends AbstractController
         return $response;
     }
     /**
-     * @Route("/conference/{slug}", name="conference")
+     * @Route("/{_locale<%app.supported_locales%>}/conference/{slug}", name="conference")
      */
     public function show(Request $request, Conference $conference,
                          CommentRepository $commentRepository, NotifierInterface $notifier, string $photoDir)
